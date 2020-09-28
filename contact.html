@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Contact Page</title>
+  </head>
+  <body>
+
+    <!-- Navigation -->
+    <nav class = "navbar navbar-expand-md navbar-light bg-light sticky-top">
+      <div class = "container-fluid">
+          <a class = "navbar-image" href="#"><img src="assets/img1.png" alt="header photo" style="height: 75px; width: 55px"></a>
+          <h1 style = "font-size: 35px; margin-left: 15px; font-family: cursive;"> Michael Tarquini </h1>
+          <button class = "navbar-toggler" type="button" data-toggle="collapse" data-target="navbarResponsive">
+              <span class = "navbar-toggler-icon"></span>
+          </button>
+          <div class = "collapse navbar-collapse" id="navbarResponsive">
+              <ul class = "navbar-nav ml-auto">
+                  <li class = "nav-item">
+                      <a class = "nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class = "nav-item">
+                      <a class = "nav-link" href="portfolio.html">Portfolio</a>
+                  </li>
+                  <li class = "nav-item active">
+                      <a class = "nav-link" href="contact.html">Contact</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+      </nav>
+    <h1>Contact:</h1>
+
+    <div class="container">
+      <div style="text-align:center">
+        <h2>Let's Connect!</h2>
+        <p>Leave me a message, I'd love to hear from ya!</p>
+      </div>
+      <div class="row">
+        <div class="column">
+          <img src="assets/jeep.png" style="width:100%">
+        </div>
+        <div class="column">
+          <form action="/action_page.php">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            <label for="subject">Message:</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+      </div>
+    </div>  
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+
+  <style>
+    body {
+        background-image: url(https://images.squarespace-cdn.com/content/v1/5b02186afcf7fdd9101774c4/1592838476881-2X8C96WWIM8RJSRX1VJT/ke17ZwdGBToddI8pDm48kHilYxHgo5pd2DczB5brOCQUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYy7Mythp_T-mtop-vrsUOmeInPi9iDjx9w8K4ZfjXt2djFQkAl81r3lGal7WreTKa0f2v-LTT6-aHhf2hEirDJACjLISwBs8eEdxAxTptZAUg/RainbowDesktopBackground.png);
+        background-size: cover;
+        background-color: aliceblue;
+        background-attachment: fixed;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+  </style>
+
+
+</html>
