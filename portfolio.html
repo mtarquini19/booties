@@ -14,7 +14,7 @@
     <!-- Navigation -->
     <nav class = "navbar navbar-expand-md navbar-light bg-light sticky-top">
       <div class = "container-fluid">
-          <a class = "navbar-image" href="#"><img src="assets/img1.png" alt="header photo" style="height: 75px; width: 55px"></a>
+          <a class = "navbar-image" href="#"><img src="assets/photos/img1.png" alt="header photo" style="height: 75px; width: 55px"></a>
           <h1 style = "font-size: 35px; margin-left: 15px; font-family: cursive;"> Michael Tarquini </h1>
           <button class = "navbar-toggler" type="button" data-toggle="collapse" data-target="navbarResponsive">
               <span class = "navbar-toggler-icon"></span>
@@ -35,33 +35,25 @@
       </div>
       </nav>
     <h1>WELCOME!! Scroll to see some tasty dishes!</h1>
-    <h2>Appetizers: </h2>
-
-    <div class = row>
-      <div class = col-md-6>
-        <img class="img-responsive" src="assets/apps.png" class = "img-thumbnail" alt="appetizers">
-        <img class="img-responsive" src="assets/fish soup.png" class = "img-thumbnail" alt="soup">
-      </div>
-    </div>
-    <br>
-    <br>
-
-    <h2>Entrees: </h2>
+  
     <div class = "row">
-      <div class = col-md-6>
-        <img class="img-responsive" src="assets/pizza.png" class = "img-thumbnail" alt="pizza">
-        <img class="img-responsive" src="assets/pbnana burger.png" class = "img-thumbnail" alt="burger">
+      <div class = "column">
+        <h2>Appetizers: </h2>
+        <img class="img-responsive" src="assets/food/apps.png" class = "img-thumbnail" alt="appetizers">
+        <img class="img-responsive" src="assets/food/fish soup.png" class = "img-thumbnail" alt="soup">
       </div>
-    </div>
-    <br>
-    <br>
 
-    <h2>Dessert: </h2>
-    <div class = "row">
-      <div class = col-md-6>
-        <img class="img-responsive" src="assets/cookie.png" class = "img-thumbnail" alt="cookie">
-        <img class="img-responsive" src="assets/crepes.png" class = "img-thumbnail" alt="crepes">
-        <img class="img-responsive" src="assets/marshmallow.png" class = "img-thumbnail" alt="marshmallow">
+      <div class = "column">
+        <h2>Entrees: </h2>
+        <img class="img-responsive" src="assets/food/pizza.png" class = "img-thumbnail" alt="pizza">
+        <img class="img-responsive" src="assets/food/pbnana burger.png" class = "img-thumbnail" alt="burger">
+      </div>
+
+      <div class = "column">
+        <h2>Desserts: </h2>
+        <img class="img-responsive" src="assets/food/cookie.png" class = "img-thumbnail" alt="cookie">
+        <img class="img-responsive" src="assets/food/crepes.png" class = "img-thumbnail" alt="crepes">
+        <img class="img-responsive" src="assets/food/marshmallow.png" class = "img-thumbnail" alt="marshmallow">
       </div>
     </div>
     
@@ -76,17 +68,51 @@
       * {
         box-sizing: border-box;
       }
-      .col-md-8 {
-        float: left;
-        margin-left: 25px;
+
+      h1 {
+        margin-left: 10px;
       }
 
-      .row::after {
-        content: "";
-        clear: both;
-        display: table;
-
+      h2 {
+        margin: 4px;
+        padding: 4px;
+        text-align: left;
       }
+
+      .row {
+        display: flex;
+        flex-wrap: 33.3%;
+        margin: 3px;
+        padding: 3px;
+      }
+
+      .column {
+        flex: 33.3%;
+        max-width: 33.3%;
+        padding: 5px;
+      }
+
+      .column img {
+        margin: 8px;
+        vertical-align: middle;
+        width: 100%;
+        border-radius: 5px;
+      }
+
+      @media screen  and (max-width: 800px) {
+        .column {
+          flex: 50%;
+          max-width: 50%;
+        }
+      }
+
+      @media screen  and (max-width: 600px) {
+        .column {
+          flex: 100%;
+          max-width: 100%;
+        }
+      }
+      
     </style>
   
 
