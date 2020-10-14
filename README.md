@@ -1,4 +1,5 @@
 # Homework 2 = Bootstrap Responsive Design
+![deployedlink](https://mtarquini19.github.io/booties/)
 
 The goal of this homework assignment was to create a functional application that included a bio section, portfolio section, and a contact section.  The deployed webpage should have active links in the navbar, as well as a responsive layout, and working contact form. 
 
